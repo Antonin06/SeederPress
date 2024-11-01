@@ -1,6 +1,19 @@
 {
-  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "landingPage": "/wp-admin/",
+  "landingPage": "/wp-admin/post.php?post=1&action=edit",
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "url",
+        "url": "https://github-proxy.com/proxy/?repo=Antonin06/SeederPress&branch-main"
+      }
+    },
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    }
+  ],
   "preferredVersions": {
     "php": "8.3",
     "wp": "latest"
@@ -8,19 +21,5 @@
   "features": {
     "networking": true
   },
-  "steps": [
-    {
-      "step": "login"
-    },
-    {
-      "step": "installPlugin",
-      "pluginData": {
-        "resource": "git:directory",
-        "url": "https://raw.githubusercontent.com/Antonin06/SeederPress/main/seederpress.zip"
-      },
-      "options": {
-        "activate": true
-      }
-    }
-  ]
+  "login": true
 }
