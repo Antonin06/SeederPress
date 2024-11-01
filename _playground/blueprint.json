@@ -16,7 +16,7 @@
       "step": "installPlugin",
       "pluginZipFile": {
         "resource": "url",
-        "url": "https://seederpress-0af5d2.gitlab.io/seederpress.zip"
+        "url": "https://github.com/Antonin06/SeederPress/raw/refs/heads/main/seederpress.zip"
       },
       "options": {
         "activate": true
