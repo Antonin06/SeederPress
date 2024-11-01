@@ -1,5 +1,5 @@
 {
-  "landingPage": "/wp-admin/post.php?post=1&action=edit",
+  "landingPage": "/wp-admin/plugins.php",
   "meta": {
     "title": "SeederPress Demo",
     "description": "SeederPress is a WordPress plugin that allows you to seed your WordPress site with dummy content.",
