@@ -14,8 +14,8 @@
     },
     {
       "step": "installPlugin",
-      "pluginZipFile": {
-        "resource": "url",
+      "pluginData": {
+        "resource": "git:directory",
         "url": "https://raw.githubusercontent.com/Antonin06/SeederPress/main/seederpress.zip"
       },
       "options": {
