@@ -1,0 +1,11 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp seederpress.zip public/
+    - cp _playground/blueprint.json public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
