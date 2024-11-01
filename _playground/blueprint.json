@@ -1,5 +1,17 @@
 {
   "landingPage": "/wp-admin/post.php?post=1&action=edit",
+  "meta": {
+    "title": "SeederPress Demo",
+    "description": "SeederPress is a WordPress plugin that allows you to seed your WordPress site with dummy content.",
+    "author": "Antonin Avon",
+    "categories": [
+      "demo",
+      "plugin"
+    ]
+  },
+  "siteOptions": {
+    "blogname": "SeederPress Demo Site"
+  },
   "steps": [
     {
       "step": "installPlugin",
