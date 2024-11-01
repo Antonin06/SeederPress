@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "wp-scripts start",
-    "build": "wp-scripts build",
+    "dev": "wp-scripts start assets/js/settings-page.js --output-path=build",
+    "build": "wp-scripts build assets/js/settings-page.js --output-path=build",
     "check-engines": "wp-scripts check-engines",
     "check-licenses": "wp-scripts check-licenses",
     "format": "wp-scripts format",

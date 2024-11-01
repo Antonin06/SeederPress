@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:       SeederPress
- * Description:       SeederPress is a WordPress plugin that provides a set of Gutenberg blocks to help you create your website.
+ * Description:       SeederPress is a WordPress plugin that allows you to seed your WordPress database with fake data.
  * Requires PHP:      8.3
  * Version:           0.0.1
  * Author:            Antonin Avon
@@ -11,14 +11,13 @@
  * Text Domain:       seederpress
  */
 
-if ( defined( 'WP_ENV' ) && WP_ENV === 'wp-env' ) {
-    // Nous sommes dans l'environnement wp-env
-    require_once __DIR__ . '/vendor/autoload.php';
-}
+require_once __DIR__ . '/vendor/autoload.php';
 
-// Inclure manuellement le fichier de la classe principale si non chargé par Composer
-if ( ! class_exists( 'SeederPress\Plugins\SeederPressPlugin' ) ) {
-    require_once __DIR__ . '/src/Plugins/SeederPressPlugin.php';
+if ( ! defined( 'SEEDERPRESS_PLUGIN_PATH' ) ) {
+    define( 'SEEDERPRESS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+}
+if ( ! defined( 'SEEDERPRESS_PLUGIN_URL' ) ) {
+    define( 'SEEDERPRESS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
 
 use SeederPress\Plugins\SeederPressPlugin;
